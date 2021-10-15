@@ -5,7 +5,7 @@ using UnityEngine;
 public class Turret : MonoBehaviour
 {
     /*
-     * La classe turret permet au tank de se protéger et d'attaquer les enemis à distance qui sont visibles. 
+     * La classe turret permet au tank de se protéger et d'attaquer les ennemis à distance qui sont visible. 
      */
 
     List<GameObject> targets;

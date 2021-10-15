@@ -5,7 +5,7 @@ using UnityEngine;
 public class AirSensorFront : MonoBehaviour
 {
     /*
-     * Le sensor permetant la détection d'un avion enemis à l'avant. Indique s'il est utiles de faire feu. 
+     * Le sensor permettant la détection d'un avion ennemis à l'avant. Indique s'il est utile de faire feu. 
      */
 
     Fighter myFighter = null;

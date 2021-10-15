@@ -93,7 +93,7 @@ public class LandBataillon : MonoBehaviour
             if(this.formation != null)
             {
                 /*
-                 * Détermine la nouvelle position du bataillon, oriente en fonction de la position actuelle permetant au escouades d'être orientés en fonction de la direction de l'enemis. 
+                 * Détermine la nouvelle position du bataillon et l'oriente en fonction de la position actuelle permettant aux escouades d'être orientés en fonction de la direction de l'ennemis. 
                  */
                 setFormation("Movement");
                 if (this.newPosition != this.firstAgent)

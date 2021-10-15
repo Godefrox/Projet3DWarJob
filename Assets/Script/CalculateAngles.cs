@@ -9,13 +9,12 @@ public class CalculateAngles : MonoBehaviour
     public Transform test3;
     public Transform test4;
 
-    // Start is called before the first frame update
+    
     void Start()
     {
         StartCoroutine(wait());
     }
 
-    // Update is called once per frame
     void Update()
     {
        

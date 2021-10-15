@@ -48,7 +48,7 @@ public class LandSquad : MonoBehaviour
     void Update()
     {
         /*
-        * Netoyage des listes avant leurs utilisations, indispensable car on ne désire pas d'éléments null lors de nos appels. 
+        * Nettoyage des listes avant leurs utilisations, indispensable, car on ne désire pas d'éléments null lors de nos appels. 
         */
         this.members.RemoveAll(member => member == null);
         if (this.members.Count <= 0)

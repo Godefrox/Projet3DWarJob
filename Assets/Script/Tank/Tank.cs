@@ -45,7 +45,7 @@ public class Tank : MonoBehaviour
     }
 
     /*
-     * permet d'obtenir la cible en cours du tank. 
+     * Permet d'obtenir la cible en cours du tank. 
     */
     public GameObject getTarget()
     {
@@ -61,7 +61,7 @@ public class Tank : MonoBehaviour
     }
 
     /*
-     * Définis si le leader attends un retour sur la position actuelle du tank. Principe de l'observateur, le chef d'escouade préviens qu'il attends un retour et dès que les conditinos sont réunis, le tank lui fournis.
+     * Définis si le leader attend un retour sur la position actuelle du tank. Principe de l'observateur, le chef d'escouade prévient qu'il attend un retour et dès que les conditions sont réunies, le tank lui fournis.
      */
     public void needReturn()
     {

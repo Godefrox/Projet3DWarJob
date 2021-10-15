@@ -6,8 +6,8 @@ using UnityEditor;
 public class Army : MonoBehaviour
 {
     /*
-     * Listes des bataillons sous les ordres de l'armée et ceux définis comme enemis.
-     * Attention, une armée est défini par un gameObject enfant  "Bataillons".
+     * Listes des bataillons sous les ordres de l'armée et ceux définis comme ennemis.
+     * Attention, une armée est défini par un gameObject enfant "Bataillons".
      */
     List<GameObject> bataillons;
     List<GameObject> bataillonsEnemy;
@@ -46,7 +46,7 @@ public class Army : MonoBehaviour
     void Update()
     {
         /*
-         * Netoyage des listes avant leurs utilisations, indispensable car on ne désire pas d'éléments null lors de nos appels. 
+         * Nettoyage des listes avant leurs utilisations, indispensable, car on ne désire pas d'éléments null lors de nos appels. 
          */
         this.bataillons.RemoveAll(bataillon => bataillon == null);
         this.bataillonsEnemy.RemoveAll(bataillon => bataillon == null);
@@ -65,7 +65,7 @@ public class Army : MonoBehaviour
             if (nbEnemy > 0)
             {
                 /*
-                 * Définis une cible pour chaque bataillons 
+                 * Définis une cible pour chaque bataillon 
                  */
                 for (int i = 0; i < nbAlly; i++)
                 {
@@ -111,7 +111,7 @@ public class Army : MonoBehaviour
     }
 
     /*
-     * Supprime le bataillon de la liste dans le cas ou celui-ci est réafécté ou éléminé. 
+     * Supprime le bataillon de la liste dans le cas où celui-ci serait réaffecté ou éliminé. 
      */
     public void removeMember(GameObject exBataillon)
     {
@@ -122,7 +122,7 @@ public class Army : MonoBehaviour
     }
 
     /*
-     * Recherche parmis toutes les armées sur la scéne pour identifier les bataillons enemis.
+     * Recherche parmi toutes les armées sur la scène pour identifier les bataillons ennemis.
      */
     void findBataillonsEnemy()
     {

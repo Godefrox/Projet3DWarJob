@@ -6,7 +6,7 @@ public class Fighter : MonoBehaviour
 {
     public GameObject target;
     GameObject formation;
-    //Les différentes positions de départs des obus.
+    //Les différentes positions de départ des obus.
     List<GameObject> cannons;
     List<GameObject> targets;
     float speed = 50;
@@ -61,7 +61,6 @@ public class Fighter : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (this.hp <= 0)
@@ -162,7 +161,7 @@ public class Fighter : MonoBehaviour
     }
 
     /*
-     * Augmente l'altitude de l'avion pour évités un potentiel crash. Actuellement basés sur la valeur 0, il est prévu qu'un raycast soit utilisés pour détecter le niveau du sol. 
+     * Augmente l'altitude de l'avion pour éviter un potentiel crash. Actuellement basés sur la valeur 0, il est prévu qu'un raycast soit utilisés pour détecter le niveau du sol. 
      */
     void moreAltitude()
     {
@@ -175,7 +174,7 @@ public class Fighter : MonoBehaviour
     }
 
     /*
-     * L'avion entre en manoeuvre d'évitement pour éviter soit un tir, soit pour s'éloigner de sa cible.
+     * L'avion entre en manœuvre d'évitement pour éviter soit un tir, soit pour s'éloigner de sa cible.
      */
     void avoidanceManeuver()
     {
@@ -238,7 +237,7 @@ public class Fighter : MonoBehaviour
     }
 
     /*
-     * Enclenche des tirs à l'avant des mitrailleuse pour éléminer une cible potentiels, ne tire que l'orsq'un enemis est présent. Ne prends pas en compte le mouvement de celui-ci.
+     * Enclenche des tirs à l'avant des mitrailleuses pour éliminer une cible potentielle, ne tire que lorsqu'un ennemis est présent. Ne prends pas en compte le mouvement de celui-ci.
      */
     void fireToEnemy()
     {
